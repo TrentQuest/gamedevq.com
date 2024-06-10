@@ -67,7 +67,7 @@ jobs:
           git push -f origin production
 
   verified-commit-check-final:
-    depends-on: remove-arbitrary-files
+    needs: remove-arbitrary-files
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' || ${{ inputs.workflow_dispatch_trigger }}
     steps:
