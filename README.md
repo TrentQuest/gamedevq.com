@@ -1,1 +1,0 @@
-# gamedevq.com
